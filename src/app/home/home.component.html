@@ -1,0 +1,88 @@
+<body style="position: relative;">
+    <div class="bodydiv">
+    <div class="navbar">
+        <mat-card class="card1">
+            <mat-toolbar class="toolbar">
+                  <span class="port"><b>My Portfolio</b></span>
+                  <span class="spacer"></span>
+                 <!-- <a href="#" style="text-decoration: none; color:black;font-size:medium;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <!--  <a href="#" style="text-decoration: none; color:black;font-size:medium;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">My CV</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <a [routerLink]="'/contacts'" style="text-decoration: none;"><button mat-raised-button color="primary" class="btn-grad" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;border-radius: 25px;">contact me</button></a>	
+            </mat-toolbar>
+        </mat-card>
+    </div>
+    <div class="txt1">
+        <h1>Hy! I Am <br><br>
+            <span style="color:rgb(255, 203, 34)">Alish Gurung</span></h1>
+    </div>
+    <div>
+        <p class="txt2">
+            Welcome to my portfolio page.<br>
+            I am currently working in Larsen & Toubro Infotech (LTI) as a <br>Senior Software Engineer. 
+        </p>
+    </div>
+    <div class="cv">
+        <a [routerLink]="'/mycv'" style="text-decoration: none;"><button mat-raised-button color="primary" class="MyCV" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;border-radius: 25px;">My CV</button></a>
+    </div>
+    <div class="categories">
+        <div class="proj">
+            <mat-card class="m" style="width: 16rem; height:17rem;border-radius : 20px;">
+                <div class="content">
+                <mat-card-title style="font-size:larger; text-align: center; padding-top: 1rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Learning & Certifications</b></mat-card-title>
+                <img mat-card-image>
+                <mat-card-content>
+                    <ul style="text-align: left;">
+                        <li>Cloud</li>
+                        <li>Programming Specific</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </mat-card-content>
+                <mat-card-actions style="padding-top: 1rem;"><a [routerLink]="'/lnc'"><button mat-raised-button>See Details</button></a></mat-card-actions>
+                </div>
+            </mat-card>
+        </div>
+        <div class="proj">
+            <mat-card class="m" style="width: 16rem; height:17rem;border-radius: 20px;">
+                <div class="content" >
+                <mat-card-title style="font-size:larger; text-align: center; padding-top: 1rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>My Projects</b></mat-card-title>
+                <img mat-card-image>
+                <mat-card-content style="padding-top: 1.8rem;">
+                    <ul align="left">
+                        <!--<li>Simple facebook clone</li> -->
+                        <li>Simple E-commerce WebApp</li>
+                        <li>My Portfolio</li>
+                    </ul>
+                </mat-card-content>
+                <mat-card-actions style="padding-top: 2.4rem;"><a [routerLink]="'/projects'"><button mat-raised-button>See Details</button></a></mat-card-actions>
+                </div>
+            </mat-card>
+        </div>
+        <div class="proj">
+            <mat-card class="m" style="width: 16rem; height:17rem;border-radius: 20px;">
+                <div class="content">
+                <mat-card-title style="font-size:larger; text-align: center; padding-top: 1rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" ><b>About Me</b></mat-card-title>
+                <img mat-card-image>
+                <mat-card-content style="padding-top: 1.8rem;">
+                    <ul align="left">
+                        <li>Me, As a Tech Lover</li>
+                        <li>My Professional Journey</li>
+                        <li>My Beliefs</li>
+                    </ul>
+                </mat-card-content>
+                <mat-card-actions style="padding-top: 1rem;"><a [routerLink]="'/aboutme'"><button mat-raised-button>See Details</button></a></mat-card-actions>
+                </div>
+            </mat-card>
+        </div> 
+       <!-- <div class="proj"><a><mat-card style="width: 10rem; height:10rem;border-radius: 20px;"></mat-card></a></div> -->
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div style="position: relative; padding-left: 3rem;"><span></span></div>
+    <div><span></span></div>
+</div>
+</body>
+<!--
+<div style="background-color:rgb(30, 32, 34)">
+    <span style="color:aliceblue;padding-top:400rem;">Designed by Alish Gurung</span>
+</div>
+-->
+<router-outlet></router-outlet>

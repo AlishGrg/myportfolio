@@ -1,0 +1,25 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.tool{
+    background: -webkit-linear-gradient(rgb(75, 214, 219), rgb(226, 104, 226));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main{
+    padding-left:4rem;
+    padding-top: 2rem;
+}
+a:hover{
+    color:white;
+}
+.title{
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(226, 231, 236);
+}
+.num:hover{
+    color: whitesmoke;
+}
