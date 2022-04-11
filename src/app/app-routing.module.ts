@@ -9,13 +9,14 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 
 
 const routes: Routes = [
+{path: '',component: HomeComponent},
 {path:'lnc',component:LncComponent},
 {path:'projects',component:ProjectsComponent},
 {path:'home',component:HomeComponent},
 {path:'mycv',component:MycvComponent},
 {path:'contacts',component:ContactsComponent},
 {path:'aboutme',component:AboutmeComponent},
-{path: '',component: HomeComponent}
+
 ];
 
 @NgModule({
